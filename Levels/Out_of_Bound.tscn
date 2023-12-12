@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb0244tpobqoi"]
+
+[sub_resource type="GDScript" id="GDScript_qceah"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+
+func _on_body_entered(body):
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7exl7"]
+size = Vector2(98.125, 45.625)
+
+[node name="OutOfBound" type="Area2D"]
+light_mask = 16
+script = SubResource("GDScript_qceah")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7exl7")
+debug_color = Color(0.803922, 0.184314, 0.235294, 0.894118)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
