@@ -8,7 +8,7 @@ extends CharacterBody2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-var has_double_jumped : bool = false
+#var has_double_jumped : bool = false
 var animation_locked : bool = false
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
@@ -19,7 +19,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 		was_in_air = true
 	else:
-		has_double_jumped = false
+		#has_double_jumped = false
 		
 		if was_in_air == true:
 			land()
@@ -31,9 +31,9 @@ func _physics_process(delta):
 		if is_on_floor():
 			# Normal jump from floor
 			jump()
-		elif not has_double_jumped:
+		#elif not has_double_jumped:
 			# Double jump in air
-			double_jump()
+			#double_jump()
 			
 
 	# Get the input direction and handle the movement/deceleration.
@@ -70,11 +70,11 @@ func jump():
 	animated_sprite.play("jump_start")
 	animation_locked = true
 	
-func double_jump():
-	velocity.y = double_jump_velocity
-	animated_sprite.play("jump_double")
-	animation_locked = true
-	has_double_jumped = true
+#func double_jump():
+	#velocity.y = double_jump_velocity
+	#animated_sprite.play("jump_double")
+	#animation_locked = true
+	#has_double_jumped = true
 
 func land():
 	animated_sprite.play("jump_end")
