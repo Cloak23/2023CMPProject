@@ -1,12 +1,8 @@
-res://Levels/BorderArea.tscn
-res://Levels/BorderArea.gd
-res://Character/player.tscn
-res://Levels/Level1.tscn
 res://MainGame.tscn
+res://enemy/enemy.gd
+res://Levels/Level1.tscn
+res://Character/player.tscn
 res://Character/BorderArea.tscn
-res://Character/player.gd
-res://Character/bullet_copy.tscn
-res://Character/bullet.gd
-res://Character/gun.gd
 res://Character/bullet.tscn
 res://enemy/enemy.tscn
+res://music.tscn

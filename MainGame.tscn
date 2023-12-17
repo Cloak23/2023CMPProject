@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkqqp2n6bd0p"]
+[gd_scene load_steps=5 format=3 uid="uid://bkqqp2n6bd0p"]
 
 [ext_resource type="PackedScene" uid="uid://dmmkegp00cl18" path="res://Levels/Level1.tscn" id="1_bew2c"]
 [ext_resource type="PackedScene" uid="uid://xxaoff7gwbrm" path="res://Character/player.tscn" id="2_32t3i"]
+[ext_resource type="PackedScene" uid="uid://btunxkg8g10yg" path="res://music.tscn" id="3_lkkyl"]
+[ext_resource type="AudioStream" uid="uid://c6du0kwjmsfux" path="res://2d_platformer_music.ogg" id="4_w6tdm"]
 
 [node name="MainGame" type="Node2D"]
 
@@ -9,5 +11,9 @@
 
 [node name="Player" parent="." instance=ExtResource("2_32t3i")]
 position = Vector2(-133, 58)
+
+[node name="Music" parent="." instance=ExtResource("3_lkkyl")]
+stream = ExtResource("4_w6tdm")
+volume_db = 2.0
 
 [editable path="Level1"]
