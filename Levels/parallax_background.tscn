@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://sjxhm4stinef"]
+
+[ext_resource type="Texture2D" uid="uid://th64bwauop8n" path="res://CMP source/map/back/ruin.png" id="1_xtoax"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Ruin" type="Sprite2D" parent="."]
+position = Vector2(-316, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_xtoax")
+centered = false

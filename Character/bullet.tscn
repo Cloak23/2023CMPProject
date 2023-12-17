@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvgsk63nihl0"]
+
+[ext_resource type="Script" path="res://Character/bullet.gd" id="1_wq68h"]
+[ext_resource type="Texture2D" uid="uid://bponnaacyp2t3" path="res://Character/bullet.webp" id="2_7knxb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6bgxh"]
+radius = 6.0
+
+[sub_resource type="Animation" id="Animation_fxwtf"]
+resource_name = "destroy"
+length = 0.3
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xyhfn"]
+_data = {
+"destroy": SubResource("Animation_fxwtf")
+}
+
+[node name="Bullet" type="RigidBody2D"]
+collision_layer = 0
+collision_mask = 26
+gravity_scale = 0.0
+continuous_cd = 2
+max_contacts_reported = 4
+contact_monitor = true
+script = ExtResource("1_wq68h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7knxb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6bgxh")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xyhfn")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="destroy"]

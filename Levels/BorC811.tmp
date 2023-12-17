@@ -16,13 +16,15 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	pass
+	var player : Player = body as Player
+	if player:
+		player.dead();
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7exl7"]
 size = Vector2(98.125, 45.625)
 
-[node name="OutOfBound" type="Area2D"]
+[node name="BorderArea" type="Area2D"]
 light_mask = 16
 script = SubResource("GDScript_qceah")
 

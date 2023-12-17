@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://xxaoff7gwbrm"]
+[gd_scene load_steps=25 format=3 uid="uid://xxaoff7gwbrm"]
 
 [ext_resource type="Script" path="res://Character/player.gd" id="1_flj5s"]
 [ext_resource type="Texture2D" uid="uid://l1vkyfe02kjr" path="res://CMP source/hero/idle/hero_idle1.png" id="2_q7c8f"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://dym23d66653r7" path="res://CMP source/hero/run/hero_run10.png" id="19_aaub5"]
 [ext_resource type="Texture2D" uid="uid://dd7202xqc53p6" path="res://CMP source/hero/run/hero_run11.png" id="20_ta88m"]
 [ext_resource type="Texture2D" uid="uid://quavduep6qb4" path="res://CMP source/hero/run/hero_run12.png" id="21_1i5xe"]
+[ext_resource type="Script" path="res://Character/gun.gd" id="22_qkexo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q1ej8"]
 animations = [{
@@ -55,31 +56,7 @@ animations = [{
 "texture": ExtResource("9_a3nqv")
 }],
 "loop": false,
-"name": &"jump_double",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_a3nqv")
-}],
-"loop": false,
-"name": &"jump_end",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_a3nqv")
-}],
-"loop": true,
-"name": &"jump_loop",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_a3nqv")
-}],
-"loop": false,
-"name": &"jump_start",
+"name": &"jumping",
 "speed": 10.0
 }, {
 "frames": [{
@@ -128,17 +105,47 @@ animations = [{
 size = Vector2(20, 24)
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 28
 script = ExtResource("1_flj5s")
+
+[node name="ShootAnimation" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="PlatformDetector" type="RayCast2D" parent="."]
+collision_mask = 8
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-16, -16)
 sprite_frames = SubResource("SpriteFrames_q1ej8")
-animation = &"idle"
+animation = &"jumping"
 autoplay = "idle"
 centered = false
+
+[node name="Gun" type="Marker2D" parent="AnimatedSprite2D"]
+position = Vector2(14, 1)
+script = ExtResource("22_qkexo")
+
+[node name="Shoot" type="AudioStreamPlayer2D" parent="AnimatedSprite2D/Gun"]
+position = Vector2(-30.6589, -6.13176)
+
+[node name="Cooldown" type="Timer" parent="AnimatedSprite2D/Gun"]
+wait_time = 0.3
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.7, 0.7)
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_2kgbg")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../Camera2D")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
