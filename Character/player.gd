@@ -14,38 +14,33 @@ extends CharacterBody2D
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
+var debug_fly : bool = false
 
 func _physics_process(delta):
 	# Add the gravity.
-	if not is_on_floor():
+	if Input.is_action_pressed("debugfly"):
+		debug_fly = true
+	
+	if not is_on_floor() && !debug_fly:
 		velocity.y += gravity * delta
-		was_in_air = true
-	else:
-		#has_double_jumped = false
-		
-		if was_in_air == true:
-			land()
-			
-		was_in_air = false
 
 	# Handle Jump.
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
-			# Normal jump from floor
 			jump()
-		#elif not has_double_jumped:
-			# Double jump in air
-			#double_jump()
 			
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_vector("left", "right", "up", "down")
 	
-	if direction.x != 0 && animated_sprite.animation != "jump_end":
+	if direction.x != 0:
 		velocity.x = direction.x * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
+		
+	if debug_fly:
+		velocity.y = direction.y * speed
 
 	move_and_slide()
 	update_facing_direction()
@@ -69,12 +64,7 @@ func get_new_animation(is_shooting := false) -> String:
 		else:
 			animation_new = "idle"
 	else:
-		if velocity.y > 0.0:
-			animation_new = "jumping"
-		else:
-			animation_new = "jumping"
-#	if is_shooting:
-#		animation_new += "_weapon"
+		animation_new = "jumping"
 	return animation_new
 		
 func dead():
@@ -96,7 +86,5 @@ func jump():
 	#animation_locked = true
 	#has_double_jumped = true
 
-func land():
-	animated_sprite.play("jump_end")
 
 		

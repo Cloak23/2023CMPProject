@@ -9,8 +9,9 @@
 
 [node name="Level1" parent="." instance=ExtResource("1_bew2c")]
 
-[node name="Player" parent="." instance=ExtResource("2_32t3i")]
+[node name="Player" parent="." node_paths=PackedStringArray("RespawnPoint") instance=ExtResource("2_32t3i")]
 position = Vector2(-133, 58)
+RespawnPoint = NodePath("../Level1/RespawnPoint")
 
 [node name="Music" parent="." instance=ExtResource("3_lkkyl")]
 stream = ExtResource("4_w6tdm")

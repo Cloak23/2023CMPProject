@@ -112,13 +112,10 @@ script = ExtResource("1_flj5s")
 wait_time = 0.2
 one_shot = true
 
-[node name="PlatformDetector" type="RayCast2D" parent="."]
-collision_mask = 8
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-16, -16)
 sprite_frames = SubResource("SpriteFrames_q1ej8")
-animation = &"jumping"
+animation = &"idle"
 autoplay = "idle"
 centered = false
 
@@ -147,5 +144,13 @@ shape = SubResource("RectangleShape2D_2kgbg")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 remote_path = NodePath("../Camera2D")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

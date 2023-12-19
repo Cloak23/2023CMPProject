@@ -28,7 +28,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = -WALK_SPEED
 
 	if is_on_wall():
-		velocity.x = -velocity.x
+		#velocity.x = -velocity.x
+		pass
 
 	move_and_slide()
 
