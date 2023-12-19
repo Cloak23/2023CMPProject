@@ -1,3 +1,13 @@
+Label
+VBoxContainer
+ColorRect
+Button
+HSlider
+HBoxContainer
+Camera2D
+TextureRect
+Control
+MarginContainer
 AnimationPlayer
 Timer
 Sprite2D
@@ -9,6 +19,3 @@ Area2D
 Node2D
 RemoteTransform2D
 ParallaxLayer
-TextureRect
-Control
-ColorRect
