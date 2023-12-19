@@ -15,5 +15,6 @@ position = Vector2(-133, 58)
 [node name="Music" parent="." instance=ExtResource("3_lkkyl")]
 stream = ExtResource("4_w6tdm")
 volume_db = -10.0
+bus = &"Music"
 
 [editable path="Level1"]

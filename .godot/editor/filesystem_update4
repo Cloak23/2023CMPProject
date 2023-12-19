@@ -15,3 +15,5 @@ res://Levels/parallax_background.tscn
 res://MENU/MainMenu.gd
 res://MENU/Options.gd
 res://default_bus_layout.tres
+res://MENU/Credit.gd
+res://MENU/Credit.tscn

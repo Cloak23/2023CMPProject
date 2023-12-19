@@ -1,12 +1,12 @@
+Camera2D
+Button
 Label
 VBoxContainer
-ColorRect
-Button
-HSlider
 HBoxContainer
-Camera2D
-TextureRect
+ColorRect
 Control
+HSlider
+TextureRect
 MarginContainer
 AnimationPlayer
 Timer

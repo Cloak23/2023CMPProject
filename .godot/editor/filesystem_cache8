@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702962162
+::res://::1702969938
 2d_platformer_music.ogg::AudioStreamOggVorbis::6956148197775204419::1702799534::1702800217::1::::<><>::
 icon.svg::CompressedTexture2D::1701750855830309230::1702798685::1702798811::1::::<><>::
-MainGame.tscn::PackedScene::91833495957473861::1702961238::0::1::::<><>::uid://dmmkegp00cl18::::res://Levels/Level1.tscn<>uid://xxaoff7gwbrm::::res://Character/player.tscn<>uid://btunxkg8g10yg::::res://music.tscn<>uid://c6du0kwjmsfux::::res://2d_platformer_music.ogg
-music.tscn::PackedScene::3762127198073455082::1702961238::0::1::::<><>::
+MainGame.tscn::PackedScene::91833495957473861::1702969937::0::1::::<><>::uid://dmmkegp00cl18::::res://Levels/Level1.tscn<>uid://xxaoff7gwbrm::::res://Character/player.tscn<>uid://btunxkg8g10yg::::res://music.tscn<>uid://c6du0kwjmsfux::::res://2d_platformer_music.ogg
+music.tscn::PackedScene::3762127198073455082::1702969938::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::6836255466927879319::1702968726::0::1::::<><>::
 ::res://Art/::1702798685
 ::res://Art/Legacy-Fantasy - High Forest 2.3/::1702798685
 Credit.txt::TextFile::-1::1702798685::0::1::::<><>::
@@ -71,15 +72,15 @@ Golden-Tree.png::CompressedTexture2D::6878549809411101730::1702798685::170279868
 Green-Tree.png::CompressedTexture2D::725885093742723659::1702798685::1702798685::1::::<><>::
 Red-Tree.png::CompressedTexture2D::1209529535376390761::1702798685::1702798685::1::::<><>::
 Yellow-Tree.png::CompressedTexture2D::1752902837429214101::1702798685::1702798685::1::::<><>::
-::res://Character/::1702961238
+::res://Character/::1702969938
 BorderArea.gd::GDScript::-1::1702798685::0::1::::<>Area2D<>::
-BorderArea.tscn::PackedScene::4896332354932401836::1702961238::0::1::::<><>::res://Character/BorderArea.gd
+BorderArea.tscn::PackedScene::4896332354932401836::1702969937::0::1::::<><>::res://Character/BorderArea.gd
 bullet.gd::GDScript::-1::1702798685::0::1::::Bullet<>RigidBody2D<>::
-bullet.tscn::PackedScene::113937797132500091::1702961238::0::1::::<><>::res://Character/bullet.gd<>uid://bponnaacyp2t3::::res://Character/bullet.webp
+bullet.tscn::PackedScene::113937797132500091::1702969938::0::1::::<><>::res://Character/bullet.gd<>uid://bponnaacyp2t3::::res://Character/bullet.webp
 bullet.webp::CompressedTexture2D::3468967163170715718::1702798685::1702798685::1::::<><>::
 gun.gd::GDScript::-1::1702798685::0::1::::Gun<>Marker2D<>::
 player.gd::GDScript::-1::1702798685::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::1661849364936379042::1702961238::0::1::::<><>::res://Character/player.gd<>uid://l1vkyfe02kjr::::res://CMP source/hero/idle/hero_idle1.png<>uid://jf6b4xvyc83x::::res://CMP source/hero/idle/hero_idle2.png<>uid://cwndxm1hlco30::::res://CMP source/hero/idle/hero_idle3.png<>uid://c18o8lxp6re6x::::res://CMP source/hero/idle/hero_idle4.png<>uid://d01iw1fm832a8::::res://CMP source/hero/idle/hero_idle5.png<>uid://c4qk0elj5m2ng::::res://CMP source/hero/idle/hero_idle6.png<>uid://bre8wrcen5paw::::res://CMP source/hero/idle/hero_idle7.png<>uid://c17rq00ueimkc::::res://CMP source/hero/jump/hero_jump.png<>uid://b2058mbtam6wv::::res://CMP source/hero/run/hero_run1.png<>uid://cpi8v5we11tei::::res://CMP source/hero/run/hero_run2.png<>uid://04xmpavtlxoa::::res://CMP source/hero/run/hero_run3.png<>uid://b2srjc8ay5x24::::res://CMP source/hero/run/hero_run4.png<>uid://sm0emyvyc3pt::::res://CMP source/hero/run/hero_run5.png<>uid://ch0yqqme0vgpj::::res://CMP source/hero/run/hero_run6.png<>uid://m1j2hxuqb0q7::::res://CMP source/hero/run/hero_run7.png<>uid://dsfuic10sgge8::::res://CMP source/hero/run/hero_run8.png<>uid://brwf36dgwp0xr::::res://CMP source/hero/run/hero_run9.png<>uid://dym23d66653r7::::res://CMP source/hero/run/hero_run10.png<>uid://dd7202xqc53p6::::res://CMP source/hero/run/hero_run11.png<>uid://quavduep6qb4::::res://CMP source/hero/run/hero_run12.png<>res://Character/gun.gd
+player.tscn::PackedScene::1661849364936379042::1702969937::0::1::::<><>::res://Character/player.gd<>uid://l1vkyfe02kjr::::res://CMP source/hero/idle/hero_idle1.png<>uid://jf6b4xvyc83x::::res://CMP source/hero/idle/hero_idle2.png<>uid://cwndxm1hlco30::::res://CMP source/hero/idle/hero_idle3.png<>uid://c18o8lxp6re6x::::res://CMP source/hero/idle/hero_idle4.png<>uid://d01iw1fm832a8::::res://CMP source/hero/idle/hero_idle5.png<>uid://c4qk0elj5m2ng::::res://CMP source/hero/idle/hero_idle6.png<>uid://bre8wrcen5paw::::res://CMP source/hero/idle/hero_idle7.png<>uid://c17rq00ueimkc::::res://CMP source/hero/jump/hero_jump.png<>uid://b2058mbtam6wv::::res://CMP source/hero/run/hero_run1.png<>uid://cpi8v5we11tei::::res://CMP source/hero/run/hero_run2.png<>uid://04xmpavtlxoa::::res://CMP source/hero/run/hero_run3.png<>uid://b2srjc8ay5x24::::res://CMP source/hero/run/hero_run4.png<>uid://sm0emyvyc3pt::::res://CMP source/hero/run/hero_run5.png<>uid://ch0yqqme0vgpj::::res://CMP source/hero/run/hero_run6.png<>uid://m1j2hxuqb0q7::::res://CMP source/hero/run/hero_run7.png<>uid://dsfuic10sgge8::::res://CMP source/hero/run/hero_run8.png<>uid://brwf36dgwp0xr::::res://CMP source/hero/run/hero_run9.png<>uid://dym23d66653r7::::res://CMP source/hero/run/hero_run10.png<>uid://dd7202xqc53p6::::res://CMP source/hero/run/hero_run11.png<>uid://quavduep6qb4::::res://CMP source/hero/run/hero_run12.png<>res://Character/gun.gd
 ::res://CMP source/::1702798685
 ::res://CMP source/hero/::1702798685
 ::res://CMP source/hero/idle/::1702798685
@@ -121,16 +122,15 @@ tileruin.png::CompressedTexture2D::4021527970523935848::1702798685::1702798685::
 ::res://CMP source/monster/frog/::1702798685
 frog_idle_full.png::CompressedTexture2D::2679773879478716917::1702798685::1702798685::1::::<><>::
 frog_jump.png::CompressedTexture2D::6112224438446652123::1702798685::1702798685::1::::<><>::
-::res://enemy/::1702961238
+::res://enemy/::1702969938
 enemy.gd::GDScript::-1::1702799852::0::1::::Enemy<>CharacterBody2D<>::
-enemy.tscn::PackedScene::2658857332138717475::1702961238::0::1::::<><>::res://enemy/enemy.gd<>uid://begdqp27k2rwn::::res://CMP source/monster/frog/frog_idle_full.png<>uid://ctc2pcxdcg1pf::::res://CMP source/monster/frog/frog_jump.png
-::res://Levels/::1702961239
-Level1.tscn::PackedScene::8026915360369246657::1702961238::0::1::::<><>::uid://bxkb8iydtbsh1::::res://CMP source/map/tilemap/tileruin.png<>uid://bd478yrtijbfn::::res://enemy/enemy.tscn<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://sjxhm4stinef::::res://Levels/parallax_background.tscn
-MainMenu.gd::GDScript::-1::1702957671::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::9130777019051262786::1702961239::0::1::::<><>::res://Levels/MainMenu.gd<>uid://th64bwauop8n::::res://CMP source/map/back/ruin.png
-Options.gd::GDScript::-1::1702957720::0::1::::<>Control<>::
-Options.tscn::PackedScene::4215733345930138168::1702961239::0::1::::<><>::res://Levels/Options.gd
-parallax_background.tscn::PackedScene::1283388252585171249::1702798685::0::1::::<><>::uid://th64bwauop8n
-::res://MENU/::1702962162
-MainMenu.tscn::PackedScene::9130777019051262786::1702962172::0::1::::<><>::res://Levels/MainMenu.gd<>uid://th64bwauop8n::::res://CMP source/map/back/ruin.png
-Options.tscn::PackedScene::4215733345930138168::1702962172::0::1::::<><>::res://Levels/Options.gd
+enemy.tscn::PackedScene::2658857332138717475::1702969938::0::1::::<><>::res://enemy/enemy.gd<>uid://begdqp27k2rwn::::res://CMP source/monster/frog/frog_idle_full.png<>uid://ctc2pcxdcg1pf::::res://CMP source/monster/frog/frog_jump.png
+::res://Levels/::1702969938
+Level1.tscn::PackedScene::8026915360369246657::1702969937::0::1::::<><>::uid://bxkb8iydtbsh1::::res://CMP source/map/tilemap/tileruin.png<>uid://bd478yrtijbfn::::res://enemy/enemy.tscn<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://sjxhm4stinef::::res://Levels/parallax_background.tscn
+parallax_background.tscn::PackedScene::1283388252585171249::1702969938::0::1::::<><>::uid://th64bwauop8n::::res://CMP source/map/back/ruin.png
+::res://MENU/::1702972388
+MainMenu.gd::GDScript::-1::1702962924::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::9130777019051262786::1702969938::0::1::::<><>::res://MENU/MainMenu.gd<>uid://th64bwauop8n::::res://CMP source/map/back/ruin.png
+Options.gd::GDScript::-1::1702969423::0::1::::<>Control<>::
+Options.tscn::PackedScene::4215733345930138168::1702969938::0::1::::<><>::res://MENU/Options.gd
+Credit.tscn::PackedScene::7973526183485659645::1702972394::0::1::::<><>::res://MENU/Options.gd

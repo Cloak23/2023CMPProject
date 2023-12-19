@@ -1,0 +1,88 @@
+[gd_scene load_steps=2 format=3 uid="uid://dluo2t4fb4g5r"]
+
+[ext_resource type="Script" path="res://MENU/Credit.gd" id="1_510ig"]
+
+[node name="Credit" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_510ig")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -457.0
+offset_top = -257.5
+offset_right = 457.0
+offset_bottom = 257.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -73.0
+offset_right = 59.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Made By"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "ShinWonYoung"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "LimHwanJae"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "KimDaeIn"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "LeeChaeRin"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = 128.0
+offset_right = 42.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, -2)
+zoom = Vector2(0.5, 0.5)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
