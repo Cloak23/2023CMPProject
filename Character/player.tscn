@@ -1,59 +1,113 @@
-[gd_scene load_steps=25 format=3 uid="uid://xxaoff7gwbrm"]
+[gd_scene load_steps=35 format=3 uid="uid://xxaoff7gwbrm"]
 
 [ext_resource type="Script" path="res://Character/player.gd" id="1_flj5s"]
-[ext_resource type="Texture2D" uid="uid://l1vkyfe02kjr" path="res://CMP source/hero/idle/hero_idle1.png" id="2_q7c8f"]
-[ext_resource type="Texture2D" uid="uid://jf6b4xvyc83x" path="res://CMP source/hero/idle/hero_idle2.png" id="3_e1tgr"]
-[ext_resource type="Texture2D" uid="uid://cwndxm1hlco30" path="res://CMP source/hero/idle/hero_idle3.png" id="4_oncii"]
-[ext_resource type="Texture2D" uid="uid://c18o8lxp6re6x" path="res://CMP source/hero/idle/hero_idle4.png" id="5_cs31a"]
-[ext_resource type="Texture2D" uid="uid://d01iw1fm832a8" path="res://CMP source/hero/idle/hero_idle5.png" id="6_2v36j"]
-[ext_resource type="Texture2D" uid="uid://c4qk0elj5m2ng" path="res://CMP source/hero/idle/hero_idle6.png" id="7_lbkvw"]
-[ext_resource type="Texture2D" uid="uid://bre8wrcen5paw" path="res://CMP source/hero/idle/hero_idle7.png" id="8_w5png"]
-[ext_resource type="Texture2D" uid="uid://c17rq00ueimkc" path="res://CMP source/hero/jump/hero_jump.png" id="9_a3nqv"]
-[ext_resource type="Texture2D" uid="uid://b2058mbtam6wv" path="res://CMP source/hero/run/hero_run1.png" id="10_fibhw"]
-[ext_resource type="Texture2D" uid="uid://cpi8v5we11tei" path="res://CMP source/hero/run/hero_run2.png" id="11_mqrdl"]
-[ext_resource type="Texture2D" uid="uid://04xmpavtlxoa" path="res://CMP source/hero/run/hero_run3.png" id="12_miksw"]
-[ext_resource type="Texture2D" uid="uid://b2srjc8ay5x24" path="res://CMP source/hero/run/hero_run4.png" id="13_5oouh"]
-[ext_resource type="Texture2D" uid="uid://sm0emyvyc3pt" path="res://CMP source/hero/run/hero_run5.png" id="14_idsfw"]
-[ext_resource type="Texture2D" uid="uid://ch0yqqme0vgpj" path="res://CMP source/hero/run/hero_run6.png" id="15_yvcnk"]
-[ext_resource type="Texture2D" uid="uid://m1j2hxuqb0q7" path="res://CMP source/hero/run/hero_run7.png" id="16_hurp6"]
-[ext_resource type="Texture2D" uid="uid://dsfuic10sgge8" path="res://CMP source/hero/run/hero_run8.png" id="17_s8jly"]
-[ext_resource type="Texture2D" uid="uid://brwf36dgwp0xr" path="res://CMP source/hero/run/hero_run9.png" id="18_qs1ic"]
-[ext_resource type="Texture2D" uid="uid://dym23d66653r7" path="res://CMP source/hero/run/hero_run10.png" id="19_aaub5"]
-[ext_resource type="Texture2D" uid="uid://dd7202xqc53p6" path="res://CMP source/hero/run/hero_run11.png" id="20_ta88m"]
-[ext_resource type="Texture2D" uid="uid://quavduep6qb4" path="res://CMP source/hero/run/hero_run12.png" id="21_1i5xe"]
+[ext_resource type="Texture2D" uid="uid://7e0bke1c882r" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-1.png" id="2_mas21"]
+[ext_resource type="Texture2D" uid="uid://7abiktxdvm04" path="res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-1.png" id="2_xmhjx"]
+[ext_resource type="Texture2D" uid="uid://dp3io2fyv4or6" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-2.png" id="3_lqbx5"]
+[ext_resource type="Texture2D" uid="uid://xpyqbocvncbv" path="res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-2.png" id="3_sleca"]
+[ext_resource type="Texture2D" uid="uid://d2vjr50c75tl7" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-3.png" id="4_h47kg"]
+[ext_resource type="Texture2D" uid="uid://cb1ak8wxywlbb" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-1.png" id="5_42wp7"]
+[ext_resource type="Texture2D" uid="uid://dt6ol0uepps50" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-4.png" id="5_f8ix1"]
+[ext_resource type="Texture2D" uid="uid://qrpisccmcm63" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-5.png" id="6_7y1fq"]
+[ext_resource type="Texture2D" uid="uid://bnryxlva1d0p6" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-2.png" id="6_k3ct5"]
+[ext_resource type="Texture2D" uid="uid://bgk8ohj2pnavf" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-4.png" id="7_m8w2g"]
+[ext_resource type="Texture2D" uid="uid://bw3nk3cuj0nc0" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-6.png" id="7_npf7i"]
+[ext_resource type="Texture2D" uid="uid://ca67fhpg0b0gr" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-3.png" id="8_qvx1x"]
+[ext_resource type="Texture2D" uid="uid://u7wffmel7ocq" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-7.png" id="8_rkmd7"]
+[ext_resource type="Texture2D" uid="uid://dwv2isrb2ey15" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-8.png" id="9_187kh"]
+[ext_resource type="Texture2D" uid="uid://bwwt1fh10wlu7" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-5.png" id="9_xeb2g"]
+[ext_resource type="Texture2D" uid="uid://dg6gie5dbsfqh" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-9.png" id="10_3i11k"]
+[ext_resource type="Texture2D" uid="uid://b1knmvm5fwfrx" path="res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-6.png" id="10_yl3l1"]
+[ext_resource type="Texture2D" uid="uid://du1k16cjylcso" path="res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-10.png" id="11_atsdk"]
+[ext_resource type="Texture2D" uid="uid://bmt52d52yw6k3" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-9.png" id="12_8dkjh"]
+[ext_resource type="Texture2D" uid="uid://p0yr8ftu2cox" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-8.png" id="13_uneiq"]
+[ext_resource type="Texture2D" uid="uid://b7nri6jpk1qi5" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-7.png" id="14_o5pwe"]
+[ext_resource type="Texture2D" uid="uid://d3qjkoi03d6" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-6.png" id="15_3ouxf"]
+[ext_resource type="Texture2D" uid="uid://dpdhqpg3lqnfp" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-5.png" id="16_xh8gk"]
+[ext_resource type="Texture2D" uid="uid://bib1epe85p17h" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-4.png" id="17_g70n2"]
+[ext_resource type="Texture2D" uid="uid://c33ox7x81vq21" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-3.png" id="18_bawb2"]
+[ext_resource type="Texture2D" uid="uid://cm82kl0w75u4n" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-2.png" id="19_syutg"]
+[ext_resource type="Texture2D" uid="uid://dfg5tv56dtj8s" path="res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-1.png" id="20_phqcb"]
 [ext_resource type="Script" path="res://Character/gun.gd" id="22_qkexo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q1ej8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_q7c8f")
+"texture": ExtResource("2_mas21")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_e1tgr")
+"texture": ExtResource("3_lqbx5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_oncii")
+"texture": ExtResource("4_h47kg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_cs31a")
+"texture": ExtResource("5_f8ix1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_2v36j")
+"texture": ExtResource("6_7y1fq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_lbkvw")
+"texture": ExtResource("7_npf7i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_w5png")
+"texture": ExtResource("8_rkmd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_187kh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3i11k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_atsdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8dkjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_uneiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o5pwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3ouxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xh8gk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_g70n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bawb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_syutg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_phqcb")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 5.0
+"name": &"attack",
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_a3nqv")
+"texture": ExtResource("2_xmhjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sleca")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_yl3l1")
 }],
 "loop": false,
 "name": &"jumping",
@@ -61,45 +115,51 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_fibhw")
+"texture": ExtResource("5_42wp7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_mqrdl")
+"texture": ExtResource("6_k3ct5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_miksw")
+"texture": ExtResource("7_m8w2g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_5oouh")
+"texture": ExtResource("8_qvx1x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_idsfw")
+"texture": ExtResource("9_xeb2g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_yvcnk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_hurp6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_s8jly")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_qs1ic")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_aaub5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_ta88m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_1i5xe")
+"texture": ExtResource("10_yl3l1")
 }],
 "loop": true,
 "name": &"run",
 "speed": 10.0
 }]
+
+[sub_resource type="Animation" id="Animation_bn4og"]
+resource_name = "run"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+
+[sub_resource type="Animation" id="Animation_56sf3"]
+resource_name = "damaged"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6lsj0"]
+_data = {
+"damaged": SubResource("Animation_56sf3"),
+"run": SubResource("Animation_bn4og")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kgbg"]
 size = Vector2(20, 24)
@@ -114,6 +174,7 @@ one_shot = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-16, -16)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_q1ej8")
 animation = &"idle"
 autoplay = "idle"
@@ -131,6 +192,9 @@ wait_time = 0.3
 one_shot = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6lsj0")
+}
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.7, 0.7)

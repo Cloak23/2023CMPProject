@@ -5,8 +5,8 @@ extends CharacterBody2D
 @export var jump_velocity : float = -215.0
 @export var double_jump_velocity : float = -200
 @export var RespawnPoint : CollisionObject2D
+@export var health : int = 3
 
-@onready var platform_detector := $PlatformDetector as RayCast2D
 @onready var shoot_timer := $ShootAnimation as Timer
 @onready var animated_sprite := $AnimatedSprite2D as AnimatedSprite2D
 @onready var gun = animated_sprite.get_node(^"Gun") as Gun
@@ -15,6 +15,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
 var debug_fly : bool = false
+
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -70,6 +71,10 @@ func get_new_animation(is_shooting := false) -> String:
 func dead():
 	global_position = RespawnPoint.global_position;
 
+func damaged():
+	health -= 1
+	if health <= 0:
+		dead()
 
 func update_facing_direction():
 	if direction.x > 0:

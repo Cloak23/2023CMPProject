@@ -1,8 +1,12 @@
+res://Character/player.tscn
 res://MENU/MainMenu.tscn
 res://Levels/Level1.tscn
-res://Character/player.gd
-res://Levels/parallax_background.tscn
 res://MainGame.tscn
 res://enemy/enemy.tscn
+res://Levels/parallax_background.tscn
+res://enemy/Frog.tscn
+res://Character/player.gd
+res://enemy/Lama.tscn
+res://enemy/Lama.tres
 res://enemy/enemy.gd
-res://Character/player.tscn
+res://enemy/Frog.tres

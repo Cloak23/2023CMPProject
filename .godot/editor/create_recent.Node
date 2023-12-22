@@ -1,3 +1,4 @@
+TextEdit
 AnimatedSprite2D
 TextureRect
 HBoxContainer
@@ -11,4 +12,3 @@ VBoxContainer
 ColorRect
 Control
 HSlider
-MarginContainer

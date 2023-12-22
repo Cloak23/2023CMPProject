@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/stretch/scale=4.0
 
+[dotnet]
+
+project/assembly_name="2023CMP"
+
 [input]
 
 up={
