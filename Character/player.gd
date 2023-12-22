@@ -15,24 +15,23 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
 var debug_fly : bool = false
+@export var more_jump : bool = false
 
 
 func _physics_process(delta):
-	# Add the gravity.
 	if Input.is_action_pressed("debugfly"):
 		debug_fly = true
 	
 	if not is_on_floor() && !debug_fly:
 		velocity.y += gravity * delta
 
-	# Handle Jump.
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			jump()
-			
+		elif more_jump:
+			jump()
+			more_jump = false
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_vector("left", "right", "up", "down")
 	
 	if direction.x != 0:

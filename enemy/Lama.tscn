@@ -161,8 +161,8 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="5"]
-radius = 24.0
-height = 50.0
+radius = 26.0056
+height = 57.9989
 
 [sub_resource type="CanvasItemMaterial" id="6"]
 blend_mode = 1
@@ -197,8 +197,8 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 8)
-rotation = -1.5708
+position = Vector2(-1.42109e-14, 5)
+rotation = -0.00603108
 shape = SubResource("5")
 
 [node name="Explosion" type="CPUParticles2D" parent="."]
@@ -222,6 +222,7 @@ scale_amount_max = 1.2
 color_ramp = SubResource("7")
 
 [node name="TextEdit" type="TextEdit" parent="."]
+visible = false
 offset_left = -33.0
 offset_top = -68.0
 offset_right = 27.0

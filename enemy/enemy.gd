@@ -29,9 +29,10 @@ func _ready():
 	
 func _physics_process(delta: float) -> void:
 	text_box.text = str(running_time)
-	if running_time >= running_max_time:
+	if _state == State.DEAD:
+		pass
+	elif running_time >= running_max_time:
 		_state = State.STOP
-		
 		stop_time += delta
 		if stop_time >= stop_max_time:
 			_state = State.WALKING

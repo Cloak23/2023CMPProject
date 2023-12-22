@@ -10,3 +10,5 @@ res://enemy/Lama.tscn
 res://enemy/Lama.tres
 res://enemy/enemy.gd
 res://enemy/Frog.tres
+res://Character/More_Jump.tscn
+res://Character/More_Jump.gd

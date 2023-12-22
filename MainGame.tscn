@@ -19,3 +19,4 @@ volume_db = -10.0
 bus = &"Music"
 
 [editable path="Level1"]
+[editable path="Level1/Enemies/Lama5"]
