@@ -10,7 +10,7 @@ extends CharacterBody2D
 @onready var shoot_timer := $ShootAnimation as Timer
 @onready var animated_sprite := $AnimatedSprite2D as AnimatedSprite2D
 @onready var gun = animated_sprite.get_node(^"Gun") as Gun
-
+@onready var audio_player = $AudioStreamPlayer2D
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
@@ -60,11 +60,14 @@ func get_new_animation(is_shooting := false) -> String:
 	var animation_new: String
 	if is_on_floor():
 		if absf(velocity.x) > 0.1:
+			
 			animation_new = "run"
 		else:
 			animation_new = "idle"
 	else:
 		animation_new = "jumping"
+	if(Input.get_vector("left", "right", "up", "down")) :
+		audio_player.play()
 	return animation_new
 		
 func dead():
