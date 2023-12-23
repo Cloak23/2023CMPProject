@@ -47,22 +47,22 @@ vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "ShinWonYoung"
+text = "WonYoungShin"
 horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "LimHwanJae"
+text = "HwanJaeLim"
 horizontal_alignment = 1
 
 [node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "KimDaeIn"
+text = "DaInKim"
 horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "LeeChaeRin"
+text = "LeeChaeRinLee"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
