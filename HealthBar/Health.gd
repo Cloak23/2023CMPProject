@@ -1,8 +1,8 @@
-extends CanvasLayer
+class_name Health extends CanvasLayer
 
 var hearts = 3
 var maxhearts = 3
-@onready var player = get_parent().get_node("player")
+@onready var player = get_parent()
 @onready var healthUI = $HealthUI
 
 # Called when the node enters the scene tree for the first time.

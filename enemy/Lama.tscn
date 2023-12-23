@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://7r3n2r82ysln"]
+[gd_scene load_steps=12 format=3 uid="uid://7r3n2r82ysln"]
 
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_7t43a"]
 [ext_resource type="SpriteFrames" uid="uid://cbybu1slyyib" path="res://enemy/Lama.tres" id="2_ybw40"]
@@ -95,6 +95,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0.486275, 0.486275, 0.486275, 0)]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Area2D:collision_mask")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="3"]
 length = 0.8
@@ -171,6 +183,9 @@ blend_mode = 1
 offsets = PackedFloat32Array(0.5, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_les0e"]
+radius = 25.02
+
 [node name="Lama" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 26
@@ -227,3 +242,13 @@ offset_left = -33.0
 offset_top = -68.0
 offset_right = 27.0
 offset_bottom = -36.0
+
+[node name="Area2D" type="Area2D" parent="."]
+disable_mode = 1
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 8)
+shape = SubResource("CircleShape2D_les0e")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

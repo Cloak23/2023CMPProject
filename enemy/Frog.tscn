@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bd478yrtijbfn"]
+[gd_scene load_steps=12 format=3 uid="uid://bd478yrtijbfn"]
 
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_nx5d4"]
 [ext_resource type="SpriteFrames" uid="uid://6blp5tjsjfn1" path="res://enemy/Frog.tres" id="2_4nvh1"]
@@ -119,6 +119,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Area2D:collision_mask")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="3"]
 length = 1.2
@@ -196,9 +208,12 @@ blend_mode = 1
 offsets = PackedFloat32Array(0.5, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_bfeeq"]
+radius = 25.02
+
 [node name="Frog" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 26
+collision_mask = 18
 collision_priority = 2.0
 script = ExtResource("1_nx5d4")
 WALK_SPEED = 75.0
@@ -253,3 +268,12 @@ offset_top = -50.0
 offset_right = 28.0
 offset_bottom = -21.0
 text = "asdf"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 8)
+shape = SubResource("CircleShape2D_bfeeq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

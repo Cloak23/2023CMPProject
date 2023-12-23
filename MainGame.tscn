@@ -1,22 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkqqp2n6bd0p"]
+[gd_scene load_steps=7 format=3 uid="uid://bkqqp2n6bd0p"]
 
 [ext_resource type="PackedScene" uid="uid://dmmkegp00cl18" path="res://Levels/Level1.tscn" id="1_bew2c"]
+[ext_resource type="Script" path="res://MainGame.gd" id="1_e46e2"]
 [ext_resource type="PackedScene" uid="uid://xxaoff7gwbrm" path="res://Character/player.tscn" id="2_32t3i"]
 [ext_resource type="PackedScene" uid="uid://btunxkg8g10yg" path="res://music.tscn" id="3_lkkyl"]
 [ext_resource type="AudioStream" uid="uid://bvlueqcm4coro" path="res://CMP source/CMP_BGM_Castlevania_Bloodlines_st4.mp3" id="4_jbt0b"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ca0f"]
+
 [node name="MainGame" type="Node2D"]
+script = ExtResource("1_e46e2")
 
 [node name="Level1" parent="." instance=ExtResource("1_bew2c")]
 
 [node name="Player" parent="." node_paths=PackedStringArray("RespawnPoint") instance=ExtResource("2_32t3i")]
 position = Vector2(-133, 58)
-RespawnPoint = NodePath("../Level1/RespawnPoint")
+RespawnPoint = NodePath("../RespawnPoint")
 
 [node name="Music" parent="." instance=ExtResource("3_lkkyl")]
 stream = ExtResource("4_jbt0b")
 volume_db = -10.0
 bus = &"Music"
 
-[editable path="Level1"]
-[editable path="Level1/Enemies/Lama5"]
+[node name="RespawnPoint" type="Area2D" parent="."]
+position = Vector2(-141, -4)
+collision_layer = 0
+collision_mask = 0
+
+[node name="RespawnPoint" type="CollisionShape2D" parent="RespawnPoint"]
+shape = SubResource("CircleShape2D_8ca0f")
