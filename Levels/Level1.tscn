@@ -522,6 +522,10 @@ scale = Vector2(2.12, 1)
 position = Vector2(875, 439)
 scale = Vector2(4.8864, 1)
 
+[node name="BorderArea4" parent="OutOfBound" instance=ExtResource("3_fes0x")]
+position = Vector2(2014, 297)
+scale = Vector2(5.5, 1.125)
+
 [node name="BorderArea" parent="OutOfBound" instance=ExtResource("3_fes0x")]
 position = Vector2(417, 295)
 scale = Vector2(1.92, 1)

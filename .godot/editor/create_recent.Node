@@ -1,7 +1,12 @@
+Camera2D
+AudioStreamPlayer
+Button
+TextEdit
+ColorRect
+Control
 TextureRect
 CanvasLayer
 AudioStreamPlayer2D
-TextEdit
 Polygon2D
 CollisionShape2D
 Area2D
@@ -9,7 +14,5 @@ Sprite2D
 AnimatedSprite2D
 HBoxContainer
 HSplitContainer
-Camera2D
-Button
 Label
 VBoxContainer

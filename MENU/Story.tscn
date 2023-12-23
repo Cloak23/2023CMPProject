@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://glkcp0frodte"]
+
+[ext_resource type="Script" path="res://MENU/Story.gd" id="1_74o7b"]
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_74o7b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -753.0
+offset_top = -358.0
+offset_right = 753.0
+offset_bottom = 358.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+offset_left = -256.0
+offset_top = -81.0
+offset_right = 259.0
+offset_bottom = 92.0
+text = "Envious of the chicken’s strength, other animals began to kill the chickens one by one. 
+Unable to just watch, the King of Chickens directly punished them. 
+However, during his absence, his egg was taken hostage.
+The King of Chickens walked into a trap set by the enemies to save his egg.
+He managed to protect his egg, but he did not survive.
+
+The other animals cheered at the king’s death and continued to kill the remaining chickens.
+The ground was covered with chicken bones. But without the crowing of roosters, the sun did not rise. 
+As the chickens died, the sun ceased to appear. With the disappearance of sunlight, the world began to turn into a land of death. 
+Herbivores became carnivores, and carnivores grew more ferocious. It was the dawn of the survival of the fittest.
+In this era, one chick would save the world.
+This is the story behind it. Unable to bear hunger, the chick emerged from the pile of bones where its mother told it to hide.
+It encountered ferocious animals. 
+They tried to swallow the chick whole, but then, the severely wounded King of Chickens saved it. However, the king was on the brink of death. He entrusted his egg to the chick he saved. 
+The egg, his own, was filled with the power of the sun and could change this now dead world. In a world without the sun, other animals would covet the egg.
+The king told of an incubator at the top of his castle, now occupied by other animals, where the egg must be placed to set things right. 
+The chick suddenly found itself with a great responsibility. But being a good and obedient friend, it agreed to the task.
+
+"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = -31.0
+offset_top = 121.0
+offset_right = 33.0
+offset_bottom = 152.0
+text = "Back
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
