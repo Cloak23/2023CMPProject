@@ -62,7 +62,7 @@ horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "LeeChaeRinLee"
+text = "ChaeRinLee"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
