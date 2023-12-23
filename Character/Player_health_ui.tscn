@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://wejga21nuvul"]
+
+[ext_resource type="Texture2D" uid="uid://dsuuct1ain43b" path="res://HealthBar/toppng.com-enchanted-golden-apple-minecraft-egg-388x421.png" id="1_hs25x"]
+
+[node name="HealthUI" type="TextureRect"]
+offset_right = 1148.0
+offset_bottom = 421.0
+texture = ExtResource("1_hs25x")
+stretch_mode = 1

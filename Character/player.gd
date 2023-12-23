@@ -10,13 +10,16 @@ extends CharacterBody2D
 @onready var shoot_timer := $ShootAnimation as Timer
 @onready var animated_sprite := $AnimatedSprite2D as AnimatedSprite2D
 @onready var gun = animated_sprite.get_node(^"Gun") as Gun
-@onready var audio_player = $AudioStreamPlayer2D
+
+@onready var gun_shoot = $fire
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
 var was_in_air : bool = false
 var debug_fly : bool = false
+var is_moving: bool = false
 @export var more_jump : bool = false
 
+signal health_changed(value)
 
 func _physics_process(delta):
 	if Input.is_action_pressed("debugfly"):
@@ -48,6 +51,7 @@ func _physics_process(delta):
 	
 	var is_shooting := false
 	if Input.is_action_just_pressed("shoot"):
+		gun_shoot.play()
 		is_shooting = gun.shoot(animated_sprite.flip_h)
 
 	var animation := get_new_animation(is_shooting)
@@ -60,14 +64,14 @@ func get_new_animation(is_shooting := false) -> String:
 	var animation_new: String
 	if is_on_floor():
 		if absf(velocity.x) > 0.1:
-			
+			is_moving = true
 			animation_new = "run"
 		else:
+			is_moving = false
 			animation_new = "idle"
 	else:
+		is_moving = false
 		animation_new = "jumping"
-	if(Input.get_vector("left", "right", "up", "down")) :
-		audio_player.play()
 	return animation_new
 		
 func dead():
@@ -75,6 +79,7 @@ func dead():
 
 func damaged():
 	health -= 1
+	emit_signal("health_changed")
 	if health <= 0:
 		dead()
 
