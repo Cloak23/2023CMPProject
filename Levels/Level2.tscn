@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqw60fqeyjleo"]
 
-[ext_resource type="Texture2D" uid="uid://de3hnhx7tmj1d" path="res://CMP source/map/tower.png" id="1_d5qa0"]
+[ext_resource type="Texture2D" uid="uid://de3hnhx7tmj1d" path="res://CMP source/map/background/tower.png" id="1_d5qa0"]
 [ext_resource type="PackedScene" uid="uid://datcox7m7yikk" path="res://Levels/Forest.tscn" id="2_qfdwu"]
 [ext_resource type="TileSet" uid="uid://f6ylsk4ehpel" path="res://Levels/Tower.tres" id="3_nmie1"]
 

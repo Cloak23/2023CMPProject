@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://datcox7m7yikk"]
 
-[ext_resource type="Texture2D" uid="uid://34wd7s4gmkkl" path="res://CMP source/CMP/백그라운드수정/백그라운드.png" id="1_q1uje"]
+[ext_resource type="Texture2D" uid="uid://34wd7s4gmkkl" path="res://CMP source/map/background/edited/edited_background.png" id="1_q1uje"]
+
 
 [node name="Forest" type="ParallaxBackground"]
 

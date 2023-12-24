@@ -1,7 +1,7 @@
 extends Control
 
 func _on_start_pressed():
-	get_tree().change_scene_to_file("res://MainGame.tscn")
+	get_tree().change_scene_to_file("res://MENU/MainGame.tscn")
 
 
 func _on_options_pressed():
