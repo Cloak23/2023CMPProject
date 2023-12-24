@@ -1,4 +1,5 @@
 res://MENU/MainMenu.tscn
+res://Script/MainMenu.gd
 res://Levels/Tower.tres
 res://enemy/Lama.tres
 res://enemy/Frog.tres
