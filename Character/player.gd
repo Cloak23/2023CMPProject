@@ -47,6 +47,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	if Input.is_action_just_pressed("jump"):
+		debug_fly = false
 		if is_on_floor():
 			jump()
 		elif more_jump:

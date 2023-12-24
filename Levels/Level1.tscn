@@ -38,6 +38,20 @@ polygon = PackedVector2Array(-10, 0, 0, 20, 10, 0, 0, -20)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/NS_Portal_in"]
 shape = SubResource("RectangleShape2D_snmcy")
 
+[node name="Level2_debug" type="Area2D" parent="Portal"]
+position = Vector2(-60, 24)
+scale = Vector2(2, 2)
+collision_layer = 4
+script = ExtResource("2_mjrwo")
+is_ns = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Portal/Level2_debug"]
+color = Color(0.662745, 0.678431, 0.929412, 1)
+polygon = PackedVector2Array(-10, 0, 0, 20, 10, 0, 0, -20)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Level2_debug"]
+shape = SubResource("RectangleShape2D_snmcy")
+
 [node name="Portal_in" type="Area2D" parent="Portal" node_paths=PackedStringArray("portal_out")]
 position = Vector2(566, 323)
 scale = Vector2(2.24508, 2.24508)
@@ -136,4 +150,5 @@ scale = Vector2(1.92, 1)
 [node name="Forest" parent="." instance=ExtResource("7_wd1pm")]
 
 [connection signal="body_entered" from="Portal/NS_Portal_in" to="Portal/NS_Portal_in" method="_on_body_entered"]
+[connection signal="body_entered" from="Portal/Level2_debug" to="Portal/Level2_debug" method="_on_body_entered"]
 [connection signal="body_entered" from="Portal/Portal_in" to="Portal/Portal_in" method="_on_body_entered"]

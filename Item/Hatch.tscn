@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4bn2ls4g5c3c"]
+
+[ext_resource type="Texture2D" uid="uid://bfemfikc8oe7" path="res://CMP source/monster/Nest_and_cup.png" id="1_u3lje"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mfkrs"]
+height = 58.0
+
+[node name="Hatch" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_u3lje")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_mfkrs")
