@@ -1,7 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://glkcp0frodte"]
+[gd_scene load_steps=3 format=3 uid="uid://glkcp0frodte"]
 
-[ext_resource type="Script" path="res://Script/Story.gd" id="1_74o7b"]
-
+[ext_resource type="Script" path="res://MENU/Story.gd" id="1_74o7b"]
+[ext_resource type="AudioStream" uid="uid://rgg172wcc3a2" path="res://Musics/SFX_Click.mp3" id="2_oqgfo"]
 
 [node name="Story" type="Control"]
 layout_mode = 3
@@ -60,5 +60,10 @@ text = "Back
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_oqgfo")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

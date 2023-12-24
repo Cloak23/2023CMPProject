@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dluo2t4fb4g5r"]
+[gd_scene load_steps=3 format=3 uid="uid://dluo2t4fb4g5r"]
 
-[ext_resource type="Script" path="res://Script/Credit.gd" id="1_510ig"]
+[ext_resource type="Script" path="res://MENU/Credit.gd" id="1_510ig"]
+[ext_resource type="AudioStream" uid="uid://rgg172wcc3a2" path="res://Musics/SFX_Click.mp3" id="2_d3jk7"]
 
 [node name="Credit" type="Control"]
 layout_mode = 3
@@ -84,5 +85,10 @@ text = "Back
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-1, -2)
 zoom = Vector2(0.5, 0.5)
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_d3jk7")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

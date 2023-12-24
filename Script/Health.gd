@@ -1,5 +1,5 @@
 class_name Health extends CanvasLayer
-
+#LimHwanJae
 # Assuming we have individual heart nodes as children of this node
 # Here 'Heart1', 'Heart2', 'Heart3' are placeholders for the actual node names
 @onready var player = get_parent()

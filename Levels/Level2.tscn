@@ -37,6 +37,7 @@ collision_layer = 0
 collision_mask = 0
 
 [node name="RespawnPoint" type="CollisionShape2D" parent="RespawnPoint"]
+position = Vector2(-1, -6)
 shape = SubResource("CircleShape2D_q2gd7")
 
 [node name="BorderArea4" parent="." instance=ExtResource("4_h2lpr")]

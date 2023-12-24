@@ -1,0 +1,106 @@
+[gd_scene load_steps=14 format=3 uid="uid://dedke0brlp4ty"]
+
+[ext_resource type="Texture2D" uid="uid://ctxdu31ncaayy" path="res://CMP source/CMP/OIG.jpg" id="1_ddjr6"]
+[ext_resource type="Texture2D" uid="uid://bfemfikc8oe7" path="res://CMP source/monster/Nest_and_cup.png" id="1_k28dq"]
+[ext_resource type="Texture2D" uid="uid://ci25hn17bxjqb" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-1.png" id="2_8cn67"]
+[ext_resource type="Texture2D" uid="uid://cyr3v27t4j1vn" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-2.png" id="3_86yvs"]
+[ext_resource type="Texture2D" uid="uid://cvjo2tpa20wnc" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-3.png" id="4_b4gmd"]
+[ext_resource type="Texture2D" uid="uid://dkqsd26ga4ax0" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-4.png" id="5_36etm"]
+[ext_resource type="Texture2D" uid="uid://7ddsy8xy8ify" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-5.png" id="6_krc7o"]
+[ext_resource type="Texture2D" uid="uid://cvifg2wj4o0ys" path="res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-6.png" id="7_4llgr"]
+[ext_resource type="Script" path="res://Levels/Back to Main.gd" id="8_vp6wd"]
+[ext_resource type="Script" path="res://Levels/Quit.gd" id="9_ud55x"]
+[ext_resource type="AudioStream" uid="uid://ck1rrsct1gqy4" path="res://Musics/music_magical_story_intro (1).wav" id="11_beqma"]
+[ext_resource type="AudioStream" uid="uid://rgg172wcc3a2" path="res://Musics/SFX_Click.mp3" id="12_ykali"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s033x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8cn67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_86yvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b4gmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_36etm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_krc7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4llgr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[node name="Ending" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-32, -88)
+scale = Vector2(1.24902, 1)
+texture = ExtResource("1_ddjr6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -444.0
+offset_top = -221.0
+offset_right = 469.0
+offset_bottom = 318.0
+color = Color(0.407843, 0.407843, 0.407843, 0.631373)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.5, 28.125)
+scale = Vector2(1.42188, 1.59766)
+texture = ExtResource("1_k28dq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -9)
+scale = Vector2(1.44043, 1.32819)
+sprite_frames = SubResource("SpriteFrames_s033x")
+animation = &"idle"
+frame_progress = 0.595761
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -45.0
+offset_top = -96.0
+offset_right = 45.0
+offset_bottom = -44.0
+text = "    VITORY!
+YOU DID IT!"
+
+[node name="Back to Main" type="Button" parent="."]
+offset_left = -64.0
+offset_top = 93.0
+offset_right = -1.0
+offset_bottom = 124.0
+text = "Main"
+script = ExtResource("8_vp6wd")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 93.0
+offset_right = 62.0
+offset_bottom = 124.0
+text = "Quit"
+script = ExtResource("9_ud55x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_beqma")
+volume_db = -10.0
+autoplay = true
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_ykali")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="Back to Main" to="Back to Main" method="_on_pressed"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]
