@@ -39,7 +39,7 @@ polygon = PackedVector2Array(-10, 0, 0, 20, 10, 0, 0, -20)
 shape = SubResource("RectangleShape2D_snmcy")
 
 [node name="Level2_debug" type="Area2D" parent="Portal"]
-position = Vector2(-70, -192)
+position = Vector2(-53, 20)
 scale = Vector2(2, 2)
 collision_layer = 4
 script = ExtResource("2_mjrwo")
@@ -152,6 +152,7 @@ scale = Vector2(1.92, 1)
 [node name="Informations" type="Node" parent="."]
 
 [node name="Information4" type="TextEdit" parent="Informations"]
+z_index = -1
 offset_left = 558.0
 offset_top = -53.0
 offset_right = 583.0
@@ -167,6 +168,7 @@ virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
 [node name="Information3" type="TextEdit" parent="Informations"]
+z_index = -1
 offset_left = 2211.0
 offset_top = 59.0
 offset_right = 2414.0
@@ -183,6 +185,7 @@ virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
 [node name="Information2" type="TextEdit" parent="Informations"]
+z_index = -1
 offset_left = -138.0
 offset_top = -48.0
 offset_right = 34.0
@@ -198,6 +201,7 @@ virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
 [node name="Information" type="TextEdit" parent="Informations"]
+z_index = -1
 offset_left = -93.0
 offset_top = -8.0
 offset_right = 35.0

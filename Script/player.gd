@@ -12,7 +12,7 @@ class_name Player extends CharacterBody2D
 @onready var attack = animated_sprite.get_node(^"Attack") as Attack
 @onready var health_bar := $Health as Health
 @onready var attack_shoot = $fire
-@onready var game_over := self.get_parent().get_node("./GameOver") as GameOver
+@onready var game_over := self.get_parent().get_node("./UI/GameOver") as GameOver
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
