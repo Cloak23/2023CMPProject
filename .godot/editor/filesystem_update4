@@ -16,3 +16,15 @@ res://Item/Hatch.gd
 res://Levels/Back to Main.gd
 res://Levels/Quit.gd
 res://Item/Hatch.tscn
+res://Levels/Ending.tscn
+res://MENU/UISoundPlayer.tscn
+res://MENU/UISoundPlayer.gd
+res://MENU/Button.gd
+res://MENU/UIsoundPlayer.tscn
+res://MENU/UIsoundPlayer.gd
+res://Musics/default_bus_layout.tres
+res://MENU/MainMenu.gd
+res://MENU/Story.tscn
+res://MENU/Credit.gd
+res://MENU/Story.gd
+res://MENU/Credit.tscn

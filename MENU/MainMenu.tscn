@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3datfnbmaa2m"]
+[gd_scene load_steps=6 format=3 uid="uid://d3datfnbmaa2m"]
 
 [ext_resource type="Script" path="res://MENU/MainMenu.gd" id="1_613j1"]
 [ext_resource type="Texture2D" uid="uid://th64bwauop8n" path="res://CMP source/map/back/ruin.png" id="2_byfxb"]
 [ext_resource type="AudioStream" uid="uid://nv8d7rcy5xy4" path="res://Musics/music_mountainous_journey.wav" id="3_o3x3t"]
+[ext_resource type="AudioStream" uid="uid://rgg172wcc3a2" path="res://Musics/SFX_Click.mp3" id="4_su6cb"]
 
 [sub_resource type="SystemFont" id="SystemFont_4r0ck"]
 font_names = PackedStringArray("Impact")
@@ -99,6 +100,10 @@ zoom = Vector2(0.5, 0.5)
 stream = ExtResource("3_o3x3t")
 volume_db = -10.0
 autoplay = true
+bus = &"Music"
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_su6cb")
 bus = &"Music"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]

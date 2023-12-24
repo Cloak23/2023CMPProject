@@ -244,7 +244,6 @@ remote_path = NodePath("../Camera2D")
 
 [node name="fire" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("31_7ujol")
-bus = &"New Bus 2"
 
 [node name="Health" parent="." instance=ExtResource("31_sgbly")]
 
