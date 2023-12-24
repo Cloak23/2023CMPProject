@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bd478yrtijbfn"]
 
-[ext_resource type="Script" path="res://enemy/enemy.gd" id="1_nx5d4"]
+[ext_resource type="Script" path="res://Script/enemy.gd" id="1_nx5d4"]
 [ext_resource type="SpriteFrames" uid="uid://6blp5tjsjfn1" path="res://enemy/Frog.tres" id="2_4nvh1"]
 
 [sub_resource type="Animation" id="Animation_67t2c"]

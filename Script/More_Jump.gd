@@ -1,15 +1,14 @@
+# scripted by Shin won young
+
 extends Area2D
 
 var visible_time : float = 0.0
 var visible_max_time : float = 4
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	# infinite respawn item
+	# use visible to turn on and off
 	if !visible:
 		visible_time += delta
 	if visible_time >= visible_max_time:
@@ -19,7 +18,8 @@ func _process(delta):
 func _on_body_entered(body):
 	if !visible:
 		return
-		
+	
+	# if player earn the item, player can more jump
 	var player : Player = body as Player
 	player.more_jump = true
 	visible = false

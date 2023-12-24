@@ -1,6 +1,6 @@
 [gd_scene load_steps=38 format=3 uid="uid://xxaoff7gwbrm"]
 
-[ext_resource type="Script" path="res://Character/player.gd" id="1_flj5s"]
+[ext_resource type="Script" path="res://Script/player.gd" id="1_flj5s"]
 [ext_resource type="Texture2D" uid="uid://7e0bke1c882r" path="res://CMP source/player/edited/attack_light/제목_없는_아트워크-1.png" id="2_mas21"]
 [ext_resource type="Texture2D" uid="uid://7abiktxdvm04" path="res://CMP source/player/edited/idle/제목_없는_아트워크-1.png" id="2_xmhjx"]
 [ext_resource type="Texture2D" uid="uid://dp3io2fyv4or6" path="res://CMP source/player/edited/attack_light/제목_없는_아트워크-2.png" id="3_lqbx5"]
@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://c33ox7x81vq21" path="res://CMP source/player/edited/attack_normal/제목_없는_아트워크-3.png" id="18_bawb2"]
 [ext_resource type="Texture2D" uid="uid://cm82kl0w75u4n" path="res://CMP source/player/edited/attack_normal/제목_없는_아트워크-2.png" id="19_syutg"]
 [ext_resource type="Texture2D" uid="uid://dfg5tv56dtj8s" path="res://CMP source/player/edited/attack_normal/제목_없는_아트워크-1.png" id="20_phqcb"]
-[ext_resource type="Script" path="res://Character/gun.gd" id="22_qkexo"]
+[ext_resource type="Script" path="res://Script/Attack.gd" id="22_qkexo"]
 [ext_resource type="AudioStream" uid="uid://cnojjho2ape6p" path="res://Musics/sci-fi-gun-shot-x6-14447_[cut_1sec].mp3" id="31_7ujol"]
 [ext_resource type="PackedScene" uid="uid://8oi2epj8g3u3" path="res://HealthBar/Health.tscn" id="31_sgbly"]
 
@@ -211,14 +211,14 @@ animation = &"attack"
 autoplay = "idle"
 centered = false
 
-[node name="Gun" type="Marker2D" parent="AnimatedSprite2D"]
+[node name="Attack" type="Marker2D" parent="AnimatedSprite2D"]
 position = Vector2(14, 1)
 script = ExtResource("22_qkexo")
 
-[node name="Shoot" type="AudioStreamPlayer2D" parent="AnimatedSprite2D/Gun"]
+[node name="Shoot" type="AudioStreamPlayer2D" parent="AnimatedSprite2D/Attack"]
 position = Vector2(-30.6589, -6.13176)
 
-[node name="Cooldown" type="Timer" parent="AnimatedSprite2D/Gun"]
+[node name="Cooldown" type="Timer" parent="AnimatedSprite2D/Attack"]
 wait_time = 0.3
 one_shot = true
 

@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cg6vd8rcmr03u"]
 
-[ext_resource type="Script" path="res://Item/More_Jump.gd" id="1_n4s5p"]
+[ext_resource type="Script" path="res://Script/More_Jump.gd" id="1_n4s5p"]
 [ext_resource type="Texture2D" uid="uid://b0ujvrncqkrpw" path="res://Item/신발.png" id="2_n3j4h"]
+
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_peobj"]
 

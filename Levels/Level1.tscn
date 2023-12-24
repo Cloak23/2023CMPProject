@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dmmkegp00cl18"]
 
 [ext_resource type="TileSet" uid="uid://cyngv7aimuqwr" path="res://Levels/Forest_Tile.tres" id="1_281uq"]
-[ext_resource type="Script" path="res://Levels/Portal_in.gd" id="2_mjrwo"]
+[ext_resource type="Script" path="res://Script/Portal_in.gd" id="2_mjrwo"]
 [ext_resource type="PackedScene" uid="uid://bd478yrtijbfn" path="res://enemy/Frog.tscn" id="2_o6rq6"]
 [ext_resource type="PackedScene" uid="uid://cb0244tpobqoi" path="res://Levels/BorderArea.tscn" id="3_fes0x"]
 [ext_resource type="PackedScene" uid="uid://7r3n2r82ysln" path="res://enemy/Lama.tscn" id="4_q75oa"]
@@ -13,7 +13,7 @@ size = Vector2(20, 40)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c5xyr"]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1(by Shin wonyoung)" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(4, -1)
@@ -119,17 +119,40 @@ scale = Vector2(2.12, 1)
 position = Vector2(875, 439)
 scale = Vector2(4.8864, 1)
 
+[node name="BorderArea6" parent="OutOfBound" instance=ExtResource("3_fes0x")]
+position = Vector2(3435, 83)
+scale = Vector2(1.20019, 8.72181)
+
+[node name="BorderArea5" parent="OutOfBound" instance=ExtResource("3_fes0x")]
+position = Vector2(3234, 298)
+scale = Vector2(2.98195, 1.26563)
+
 [node name="BorderArea4" parent="OutOfBound" instance=ExtResource("3_fes0x")]
-position = Vector2(2014, 297)
-scale = Vector2(5.5, 1.125)
+position = Vector2(2021, 297)
+scale = Vector2(5.62334, 1.125)
 
 [node name="BorderArea" parent="OutOfBound" instance=ExtResource("3_fes0x")]
 position = Vector2(417, 295)
 scale = Vector2(1.92, 1)
 
-[node name="Forest" parent="." instance=ExtResource("7_wd1pm")]
+[node name="Informations" type="Node" parent="."]
 
-[node name="Information3" type="TextEdit" parent="."]
+[node name="Information4" type="TextEdit" parent="Informations"]
+offset_left = 558.0
+offset_top = -53.0
+offset_right = 583.0
+offset_bottom = -18.0
+text = "↓"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+
+[node name="Information3" type="TextEdit" parent="Informations"]
 offset_left = 2211.0
 offset_top = 59.0
 offset_right = 2414.0
@@ -145,7 +168,7 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
-[node name="Information2" type="TextEdit" parent="."]
+[node name="Information2" type="TextEdit" parent="Informations"]
 offset_left = -138.0
 offset_top = -48.0
 offset_right = 34.0
@@ -160,7 +183,7 @@ drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
 
-[node name="Information" type="TextEdit" parent="."]
+[node name="Information" type="TextEdit" parent="Informations"]
 offset_left = -93.0
 offset_top = -8.0
 offset_right = 35.0
@@ -175,6 +198,8 @@ deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
 virtual_keyboard_enabled = false
 middle_mouse_paste_enabled = false
+
+[node name="Forest" parent="." instance=ExtResource("7_wd1pm")]
 
 [connection signal="body_entered" from="Portal/NS_Portal_in" to="Portal/NS_Portal_in" method="_on_body_entered"]
 [connection signal="body_entered" from="Portal/Portal_in" to="Portal/Portal_in" method="_on_body_entered"]

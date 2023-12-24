@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dluo2t4fb4g5r"]
 
-[ext_resource type="Script" path="res://MENU/Credit.gd" id="1_510ig"]
+[ext_resource type="Script" path="res://Script/Credit.gd" id="1_510ig"]
 
 [node name="Credit" type="Control"]
 layout_mode = 3

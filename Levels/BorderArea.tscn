@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cb0244tpobqoi"]
 
-[ext_resource type="Script" path="res://Levels/BorderArea.gd" id="1_ctl4n"]
+[ext_resource type="Script" path="res://Script/BorderArea.gd" id="1_ctl4n"]
 
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7exl7"]

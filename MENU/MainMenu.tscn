@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://d3datfnbmaa2m"]
 
-[ext_resource type="Script" path="res://MENU/MainMenu.gd" id="1_613j1"]
+[ext_resource type="Script" path="res://Script/MainMenu.gd" id="1_613j1"]
 [ext_resource type="Texture2D" uid="uid://th64bwauop8n" path="res://CMP source/map/background/ruin.png" id="2_byfxb"]
 [ext_resource type="AudioStream" uid="uid://nv8d7rcy5xy4" path="res://Musics/music_mountainous_journey.wav" id="3_o3x3t"]
 

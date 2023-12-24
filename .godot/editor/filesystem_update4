@@ -11,3 +11,14 @@ res://enemy/Lama.tscn
 res://Levels/Level1.tscn
 res://Levels/Forest_Tile.tres
 res://MENU/MainMenu.gd
+res://Script/BorderArea.gd
+res://Script/bullet.gd
+res://Script/Credit.gd
+res://Script/enemy.gd
+res://Script/gun.gd
+res://Script/MainGame.gd
+res://Script/More_Jump.gd
+res://Script/player.gd
+res://Script/Portal_in.gd
+res://Script/Attack.gd
+res://MENU/Credit.tscn
