@@ -1,3 +1,4 @@
+CanvasLayer
 ColorRect
 Button
 Label
@@ -9,10 +10,5 @@ AudioStreamPlayer
 TextEdit
 Control
 TextureRect
-CanvasLayer
 AudioStreamPlayer2D
 Polygon2D
-AnimatedSprite2D
-HBoxContainer
-HSplitContainer
-VBoxContainer

@@ -12,6 +12,7 @@ class_name Player extends CharacterBody2D
 @onready var attack = animated_sprite.get_node(^"Attack") as Attack
 @onready var health_bar := $Health as Health
 @onready var attack_shoot = $fire
+@onready var game_over := self.get_parent().get_node("./GameOver") as GameOver
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction : Vector2 = Vector2.ZERO
@@ -102,13 +103,14 @@ func get_new_animation(is_shooting := false) -> String:
 
 # respawn when player dead or go to next Level
 func respawn():
+	health = 3
+	health_changed.emit(health)
 	global_position = RespawnPoint.global_position;
 
 # dead when touch the out of bound area or hp == 0
 func dead():
-	health = 3
-	health_changed.emit(health)
-	respawn()
+	health = 0
+	game_over.visible = true
 
 # update animation direction
 func update_facing_direction():

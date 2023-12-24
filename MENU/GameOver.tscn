@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcx8w3shprsio"]
+
+[ext_resource type="Script" path="res://MENU/GameOver.gd" id="1_u183m"]
+
+[node name="GameOver" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u183m")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 160.0
+offset_right = 878.0
+offset_bottom = 326.0
+theme_override_colors/background_color = Color(0, 0, 0, 0.0352941)
+theme_override_font_sizes/font_size = 100
+text = "Game Over"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 421.0
+offset_right = 653.0
+offset_bottom = 498.0
+theme_override_font_sizes/font_size = 50
+text = "Retry"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
