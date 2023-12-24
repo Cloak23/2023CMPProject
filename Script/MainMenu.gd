@@ -2,7 +2,7 @@ extends Control
 #LimHwanJae
 func _on_start_pressed():
 	$BGM2.play()
-	get_tree().change_scene_to_file("res://MainGame.tscn")
+	get_tree().change_scene_to_file("res://MENU/MainGame.tscn")
 
 
 

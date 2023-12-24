@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_u183m")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -4.0
 offset_top = -2.0
 offset_right = 290.0
@@ -20,6 +21,7 @@ offset_bottom = 166.0
 color = Color(0.407843, 0.407843, 0.407843, 0.882353)
 
 [node name="victory" type="Label" parent="."]
+layout_mode = 0
 offset_left = 59.0
 offset_top = 26.0
 offset_right = 222.0
