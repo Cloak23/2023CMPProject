@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703423600
+::res://::1703430072
 default_bus_layout.tres::AudioBusLayout::8824888143882009919::1703261842::0::1::::<><>::
 icon.svg::CompressedTexture2D::1701750855830309230::1702798685::1702798811::1::::<><>::
 MainGame.gd::GDScript::-1::1703407505::0::1::::MainGame<>Node2D<>::
@@ -97,7 +97,7 @@ Golden-Tree.png::CompressedTexture2D::6878549809411101730::1703407505::170340750
 Green-Tree.png::CompressedTexture2D::725885093742723659::1703407505::1703407505::1::::<><>::
 Red-Tree.png::CompressedTexture2D::1209529535376390761::1703407505::1703407505::1::::<><>::
 Yellow-Tree.png::CompressedTexture2D::1752902837429214101::1703407505::1703407505::1::::<><>::
-::res://Character/::1703422564
+::res://Character/::1703429063
 BorderArea.gd::GDScript::-1::1703407505::0::1::::<>Area2D<>::
 BorderArea.tscn::PackedScene::4896332354932401836::1703407505::0::1::::<><>::res://Character/BorderArea.gd
 bullet.gd::GDScript::-1::1703407505::0::1::::Bullet<>RigidBody2D<>::
@@ -105,7 +105,7 @@ bullet.tscn::PackedScene::113937797132500091::1703407505::0::1::::<><>::res://Ch
 bullet.webp::CompressedTexture2D::3468967163170715718::1702798685::1702798685::1::::<><>::
 gun.gd::GDScript::-1::1703407505::0::1::::Gun<>Marker2D<>::
 player.gd::GDScript::-1::1703407505::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::1661849364936379042::1703422564::0::1::::<><>::res://Character/player.gd<>uid://7e0bke1c882r::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-1.png<>uid://7abiktxdvm04::::res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-1.png<>uid://dp3io2fyv4or6::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-2.png<>uid://xpyqbocvncbv::::res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-2.png<>uid://d2vjr50c75tl7::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-3.png<>uid://cb1ak8wxywlbb::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-1.png<>uid://dt6ol0uepps50::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-4.png<>uid://qrpisccmcm63::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-5.png<>uid://bnryxlva1d0p6::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-2.png<>uid://bgk8ohj2pnavf::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-4.png<>uid://bw3nk3cuj0nc0::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-6.png<>uid://ca67fhpg0b0gr::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-3.png<>uid://u7wffmel7ocq::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-7.png<>uid://dwv2isrb2ey15::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-8.png<>uid://bwwt1fh10wlu7::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-5.png<>uid://dg6gie5dbsfqh::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-9.png<>uid://b1knmvm5fwfrx::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-6.png<>uid://du1k16cjylcso::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-10.png<>uid://bmt52d52yw6k3::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-9.png<>uid://p0yr8ftu2cox::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-8.png<>uid://b7nri6jpk1qi5::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-7.png<>uid://d3qjkoi03d6::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-6.png<>uid://dpdhqpg3lqnfp::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-5.png<>uid://bib1epe85p17h::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-4.png<>uid://c33ox7x81vq21::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-3.png<>uid://cm82kl0w75u4n::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-2.png<>uid://dfg5tv56dtj8s::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-1.png<>res://Character/gun.gd<>uid://cnojjho2ape6p::::res://Musics/sci-fi-gun-shot-x6-14447_[cut_1sec].mp3<>uid://8oi2epj8g3u3::::res://HealthBar/Health.tscn
+player.tscn::PackedScene::1661849364936379042::1703429063::0::1::::<><>::res://Character/player.gd<>uid://7e0bke1c882r::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-1.png<>uid://7abiktxdvm04::::res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-1.png<>uid://dp3io2fyv4or6::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-2.png<>uid://xpyqbocvncbv::::res://CMP source/CMP/삐약이/깜빡인당(초당프레임4)/제목_없는_아트워크-2.png<>uid://d2vjr50c75tl7::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-3.png<>uid://cb1ak8wxywlbb::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-1.png<>uid://dt6ol0uepps50::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-4.png<>uid://qrpisccmcm63::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-5.png<>uid://bnryxlva1d0p6::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-2.png<>uid://bgk8ohj2pnavf::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-4.png<>uid://bw3nk3cuj0nc0::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-6.png<>uid://ca67fhpg0b0gr::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-3.png<>uid://u7wffmel7ocq::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-7.png<>uid://dwv2isrb2ey15::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-8.png<>uid://bwwt1fh10wlu7::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-5.png<>uid://dg6gie5dbsfqh::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-9.png<>uid://b1knmvm5fwfrx::::res://CMP source/CMP/삐약이/걷는다(초당프레임6)/제목_없는_아트워크-6.png<>uid://du1k16cjylcso::::res://CMP source/CMP/삐약이/휘두른다-빔/제목_없는_아트워크-10.png<>uid://bmt52d52yw6k3::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-9.png<>uid://p0yr8ftu2cox::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-8.png<>uid://b7nri6jpk1qi5::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-7.png<>uid://d3qjkoi03d6::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-6.png<>uid://dpdhqpg3lqnfp::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-5.png<>uid://bib1epe85p17h::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-4.png<>uid://c33ox7x81vq21::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-3.png<>uid://cm82kl0w75u4n::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-2.png<>uid://dfg5tv56dtj8s::::res://CMP source/CMP/삐약이/휘두른다(초당프레임10)/제목_없는_아트워크-1.png<>res://Character/gun.gd<>uid://cnojjho2ape6p::::res://Musics/sci-fi-gun-shot-x6-14447_[cut_1sec].mp3<>uid://8oi2epj8g3u3::::res://HealthBar/Health.tscn
 Player_health_ui.tscn::PackedScene::1552969281660502775::1703319610::0::1::::<><>::uid://dsuuct1ain43b
 ::res://CMP source/::1703407505
 CMP_BGM_Castlevania_Bloodlines_st4.mp3::AudioStreamMP3::3884316882464672872::1703407505::1703407505::1::::<><>::
@@ -208,48 +208,46 @@ plant_idle_full.png::CompressedTexture2D::8338124837245661653::1703252727::17032
 ::res://CMP source/monster/weasel/::1703252727
  weasel_idle_full.png::CompressedTexture2D::7714056526662637229::1703252727::1703252727::1::::<><>::
  weasel_run_full.png::CompressedTexture2D::7367069303140927030::1703252727::1703252727::1::::<><>::
-::res://enemy/::1703422564
+::res://enemy/::1703429063
 enemy.gd::GDScript::-1::1703407505::0::1::::Enemy<>CharacterBody2D<>::
 Frog.tres::SpriteFrames::2178614809847189296::1703352686::0::1::::<><>::uid://begdqp27k2rwn::::res://CMP source/monster/frog/frog_idle_full.png<>uid://ctc2pcxdcg1pf::::res://CMP source/monster/frog/frog_jump.png
-Frog.tscn::PackedScene::2658857332138717475::1703422564::0::1::::<><>::res://enemy/enemy.gd<>uid://6blp5tjsjfn1::::res://enemy/Frog.tres
+Frog.tscn::PackedScene::2658857332138717475::1703429063::0::1::::<><>::res://enemy/enemy.gd<>uid://6blp5tjsjfn1::::res://enemy/Frog.tres
 Lama.tres::SpriteFrames::143902150115850913::1703352686::0::1::::<><>::uid://dcrxyptycpd4g::::res://CMP source/monster/lama/lama_idle_full.png<>uid://bl7txo8k6df4w::::res://CMP source/monster/lama/lama_run_full.png
-Lama.tscn::PackedScene::2282862155282820635::1703422564::0::1::::<><>::res://enemy/enemy.gd<>uid://cbybu1slyyib::::res://enemy/Lama.tres
-::res://HealthBar/::1703422564
-Health.gd::GDScript::-1::1703407505::0::1::::Health<>CanvasLayer<>::
-Health.tscn::PackedScene::2345667314708223060::1703422564::0::1::::<><>::res://HealthBar/Health.gd<>uid://bx6x8eevxyuhc::::res://HealthBar/heart pixel art 16x16.png
+Lama.tscn::PackedScene::2282862155282820635::1703429063::0::1::::<><>::res://enemy/enemy.gd<>uid://cbybu1slyyib::::res://enemy/Lama.tres
+::res://HealthBar/::1703429063
+Health.gd::GDScript::-1::1703427614::0::1::::Health<>CanvasLayer<>::
+Health.tscn::PackedScene::2345667314708223060::1703429063::0::1::::<><>::res://HealthBar/Health.gd<>uid://bx6x8eevxyuhc::::res://HealthBar/heart pixel art 16x16.png
 heart pixel art 16x16.png::CompressedTexture2D::4066215437034653712::1703321145::1703321148::1::::<><>::
-::res://Item/::1703422564
-Hatch.gd::GDScript::-1::1703421627::0::1::::<>Area2D<>::
-Hatch.tscn::PackedScene::4424799671181654962::1703422564::0::1::::<><>::uid://bfemfikc8oe7::::res://CMP source/monster/Nest_and_cup.png
+::res://Item/::1703429063
+Hatch.gd::GDScript::-1::1703427614::0::1::::<>Area2D<>::
+Hatch.tscn::PackedScene::4424799671181654962::1703429063::0::1::::<><>::uid://bfemfikc8oe7::::res://CMP source/monster/Nest_and_cup.png
 More_Jump.gd::GDScript::-1::1703407505::0::1::::<>Area2D<>::
 More_Jump.tscn::PackedScene::5259252313459894648::1703407505::0::1::::<><>::res://Item/More_Jump.gd<>uid://b0ujvrncqkrpw
 스프링.png::CompressedTexture2D::7933402061892327305::1703352090::1703352090::1::::<><>::
 신발.png::CompressedTexture2D::4183014197424082472::1703352090::1703352090::1::::<><>::
-::res://Levels/::1703422565
-Back to Main.gd::GDScript::-1::1703406959::0::1::::<>Button<>::
-Ending.tscn::PackedScene::7446826187413179930::1703422565::0::1::::<><>::uid://ctxdu31ncaayy::::res://CMP source/CMP/OIG.jpg<>uid://bfemfikc8oe7::::res://CMP source/monster/Nest_and_cup.png<>uid://ci25hn17bxjqb::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-1.png<>uid://cyr3v27t4j1vn::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-2.png<>uid://cvjo2tpa20wnc::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-3.png<>uid://dkqsd26ga4ax0::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-4.png<>uid://7ddsy8xy8ify::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-5.png<>uid://cvifg2wj4o0ys::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-6.png<>res://Levels/Back to Main.gd<>res://Levels/Quit.gd<>uid://ck1rrsct1gqy4::::res://Musics/music_magical_story_intro (1).wav
+::res://Levels/::1703429063
+Back to Main.gd::GDScript::-1::1703428707::0::1::::<>Button<>::
+Ending.tscn::PackedScene::7446826187413179930::1703429063::0::1::::<><>::uid://ctxdu31ncaayy::::res://CMP source/CMP/OIG.jpg<>uid://bfemfikc8oe7::::res://CMP source/monster/Nest_and_cup.png<>uid://ci25hn17bxjqb::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-1.png<>uid://cyr3v27t4j1vn::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-2.png<>uid://cvjo2tpa20wnc::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-3.png<>uid://dkqsd26ga4ax0::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-4.png<>uid://7ddsy8xy8ify::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-5.png<>uid://cvifg2wj4o0ys::::res://CMP source/CMP/HOLY_EGG/제목_없는_아트워크-6.png<>res://Levels/Back to Main.gd<>res://Levels/Quit.gd<>uid://ck1rrsct1gqy4::::res://Musics/music_magical_story_intro (1).wav<>uid://rgg172wcc3a2::::res://Musics/SFX_Click.mp3
 Forest.tscn::PackedScene::7198632921566375742::1703407505::0::1::::<><>::uid://34wd7s4gmkkl
 Forest_Tile.tres::TileSet::6484614010257887389::1703410394::0::1::::<><>::uid://bxkb8iydtbsh1::::res://CMP source/map/tilemap/tileruin.png
-Level1.tscn::PackedScene::8026915360369246657::1703422564::0::1::::<><>::uid://cyngv7aimuqwr::::res://Levels/Forest_Tile.tres<>res://Levels/Portal_in.gd<>uid://bd478yrtijbfn::::res://enemy/Frog.tscn<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://7r3n2r82ysln::::res://enemy/Lama.tscn<>uid://cg6vd8rcmr03u::::res://Item/More_Jump.tscn<>uid://datcox7m7yikk::::res://Levels/Forest.tscn
-Level2.tscn::PackedScene::8329627019048320906::1703422564::0::1::::<><>::uid://de3hnhx7tmj1d::::res://CMP source/map/tower.png<>uid://datcox7m7yikk::::res://Levels/Forest.tscn<>uid://f6ylsk4ehpel::::res://Levels/Tower.tres<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://7r3n2r82ysln::::res://enemy/Lama.tscn<>uid://b4bn2ls4g5c3c::::res://Item/Hatch.tscn<>res://Item/Hatch.gd<>res://Levels/Back to Main.gd<>res://Levels/Quit.gd
+Level1.tscn::PackedScene::8026915360369246657::1703429063::0::1::::<><>::uid://cyngv7aimuqwr::::res://Levels/Forest_Tile.tres<>res://Levels/Portal_in.gd<>uid://bd478yrtijbfn::::res://enemy/Frog.tscn<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://7r3n2r82ysln::::res://enemy/Lama.tscn<>uid://cg6vd8rcmr03u::::res://Item/More_Jump.tscn<>uid://datcox7m7yikk::::res://Levels/Forest.tscn
+Level2.tscn::PackedScene::8329627019048320906::1703429063::0::1::::<><>::uid://de3hnhx7tmj1d::::res://CMP source/map/tower.png<>uid://datcox7m7yikk::::res://Levels/Forest.tscn<>uid://f6ylsk4ehpel::::res://Levels/Tower.tres<>uid://cb0244tpobqoi::::res://Character/BorderArea.tscn<>uid://7r3n2r82ysln::::res://enemy/Lama.tscn<>uid://b4bn2ls4g5c3c::::res://Item/Hatch.tscn<>res://Item/Hatch.gd<>res://Levels/Back to Main.gd<>res://Levels/Quit.gd
 Portal_in.gd::GDScript::-1::1703407505::0::1::::<>Area2D<>::
-Quit.gd::GDScript::-1::1703406959::0::1::::<>Button<>::
+Quit.gd::GDScript::-1::1703428708::0::1::::<>Button<>::
 Tower.tres::TileSet::416417742316975975::1703410394::0::1::::<><>::uid://bbse5yj7n5x5::::res://CMP source/map/tiletower&ruin.png
-::res://MENU/::1703423584
-Credit.gd::GDScript::-1::1703407505::0::1::::<>Control<>::
-Credit.tscn::PackedScene::7973526183485659645::1703407505::0::1::::<><>::res://MENU/Credit.gd
-MainMenu.gd::GDScript::-1::1703407505::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::9130777019051262786::1703422564::0::1::::<><>::res://MENU/MainMenu.gd<>uid://th64bwauop8n::::res://CMP source/map/back/ruin.png<>uid://nv8d7rcy5xy4::::res://Musics/music_mountainous_journey.wav
+::res://MENU/::1703429408
+Credit.gd::GDScript::-1::1703428308::0::1::::<>Control<>::
+Credit.tscn::PackedScene::7973526183485659645::1703429063::0::1::::<><>::res://MENU/Credit.gd<>uid://rgg172wcc3a2::::res://Musics/SFX_Click.mp3
+MainMenu.gd::GDScript::-1::1703429408::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::9130777019051262786::1703429408::0::1::::<><>::res://MENU/MainMenu.gd<>uid://th64bwauop8n::::res://CMP source/map/back/ruin.png<>uid://nv8d7rcy5xy4::::res://Musics/music_mountainous_journey.wav<>uid://rgg172wcc3a2::::res://Musics/SFX_Click.mp3
 Options.gd::GDScript::-1::1703407505::0::1::::<>Control<>::
 Options.tscn::PackedScene::4215733345930138168::1703407505::0::1::::<><>::res://MENU/Options.gd
-Story.gd::GDScript::-1::1703407505::0::1::::<>Control<>::
-Story.tscn::PackedScene::444452785359138038::1703407505::0::1::::<><>::res://MENU/Story.gd
-UISoundPlayer.gd::GDScript::-1::1703422782::0::1::::<>Node2D<>::
-UISoundPlayer.tscn::PackedScene::1367997122262118306::1703422773::0::1::::<><>::
-::res://Musics/::1703423599
+Story.gd::GDScript::-1::1703428308::0::1::::<>Control<>::
+Story.tscn::PackedScene::444452785359138038::1703429063::0::1::::<><>::res://MENU/Story.gd<>uid://rgg172wcc3a2::::res://Musics/SFX_Click.mp3
+::res://Musics/::1703424950
 2d_platformer_music.ogg::AudioStreamOggVorbis::6956148197775204419::1702799534::1703260709::1::::<><>::
 08_Step_rock_02.wav::AudioStreamWAV::642265161937377873::1703268931::1703268933::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::6836255466927879319::1702972402::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::6836255466927879319::1703424950::0::1::::<><>::
 music_magical_story_intro (1).wav::AudioStreamWAV::5529467122153677629::1703422539::1703422541::1::::<><>::
 music_mountainous_journey.wav::AudioStreamWAV::957817625405713433::1703347541::1703347543::1::::<><>::
 sci-fi-gun-shot-x6-14447_[cut_1sec].mp3::AudioStreamMP3::5714760538835566741::1703306802::1703306803::1::::<><>::
