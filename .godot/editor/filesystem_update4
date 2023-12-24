@@ -1,6 +1,4 @@
-res://MENU/Story.tscn
 res://MENU/MainMenu.tscn
-res://Script/MainMenu.gd
 res://Levels/Tower.tres
 res://enemy/Lama.tres
 res://enemy/Frog.tres
@@ -14,5 +12,4 @@ res://Levels/Level1.tscn
 res://Item/Hatch.tscn
 res://Levels/Ending.tscn
 res://MENU/Credit.tscn
-res://MENU/MainGame.tscn
-res://MENU/GameOver.tscn
+res://MENU/Story.tscn
