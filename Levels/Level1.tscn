@@ -39,7 +39,7 @@ polygon = PackedVector2Array(-10, 0, 0, 20, 10, 0, 0, -20)
 shape = SubResource("RectangleShape2D_snmcy")
 
 [node name="Level2_debug" type="Area2D" parent="Portal"]
-position = Vector2(-60, 24)
+position = Vector2(-70, -192)
 scale = Vector2(2, 2)
 collision_layer = 4
 script = ExtResource("2_mjrwo")

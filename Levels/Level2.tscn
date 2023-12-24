@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://de3hnhx7tmj1d" path="res://CMP source/map/background/tower.png" id="1_d5qa0"]
 [ext_resource type="PackedScene" uid="uid://datcox7m7yikk" path="res://Levels/Forest.tscn" id="2_qfdwu"]
 [ext_resource type="TileSet" uid="uid://f6ylsk4ehpel" path="res://Levels/Tower.tres" id="3_nmie1"]
-[ext_resource type="PackedScene" uid="uid://cb0244tpobqoi" path="res://Character/BorderArea.tscn" id="4_h2lpr"]
+[ext_resource type="PackedScene" uid="uid://cb0244tpobqoi" path="res://Levels/BorderArea.tscn" id="4_h2lpr"]
 [ext_resource type="PackedScene" uid="uid://7r3n2r82ysln" path="res://enemy/Lama.tscn" id="5_s276w"]
 [ext_resource type="PackedScene" uid="uid://b4bn2ls4g5c3c" path="res://Item/Hatch.tscn" id="6_nbbqn"]
 [ext_resource type="Script" path="res://Item/Hatch.gd" id="7_arpa8"]
