@@ -15,7 +15,7 @@ script = ExtResource("1_u183m")
 offset_left = -4.0
 offset_top = -2.0
 offset_right = 290.0
-offset_bottom = 160.0
+offset_bottom = 166.0
 color = Color(0.407843, 0.407843, 0.407843, 0.882353)
 
 [node name="victory" type="Label" parent="."]
