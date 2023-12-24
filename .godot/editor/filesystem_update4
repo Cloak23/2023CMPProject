@@ -1,24 +1,18 @@
-res://Musics/music.tscn
+res://Levels/Level2.tscn
 res://Levels/Tower.tres
 res://enemy/Frog.tres
 res://enemy/Lama.tres
 res://MENU/MainMenu.tscn
-res://Levels/Level2.tscn
 res://Character/player.tscn
 res://HealthBar/Health.tscn
 res://enemy/Frog.tscn
 res://enemy/Lama.tscn
-res://Levels/Level1.tscn
+res://Character/player.gd
 res://Levels/Forest_Tile.tres
-res://MENU/MainMenu.gd
-res://Script/BorderArea.gd
-res://Script/bullet.gd
-res://Script/Credit.gd
-res://Script/enemy.gd
-res://Script/gun.gd
-res://Script/MainGame.gd
-res://Script/More_Jump.gd
-res://Script/player.gd
-res://Script/Portal_in.gd
-res://Script/Attack.gd
-res://MENU/Credit.tscn
+res://Levels/Level1.tscn
+res://HealthBar/Health.gd
+res://CMP source/monster/Hatch.tscn
+res://Item/Hatch.gd
+res://Levels/Back to Main.gd
+res://Levels/Quit.gd
+res://Item/Hatch.tscn

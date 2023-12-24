@@ -192,8 +192,9 @@ _data = {
 "run": SubResource("Animation_bn4og")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kgbg"]
-size = Vector2(20, 24)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lqc0r"]
+radius = 5.0
+height = 22.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 28
@@ -204,10 +205,11 @@ wait_time = 0.2
 one_shot = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-16, -16)
+self_modulate = Color(0.0823529, 0.0823529, 0.0823529, 1)
+position = Vector2(-37, -18)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_q1ej8")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
 centered = false
 
@@ -234,8 +236,8 @@ drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
-shape = SubResource("RectangleShape2D_2kgbg")
+position = Vector2(-21, 0)
+shape = SubResource("CapsuleShape2D_lqc0r")
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 remote_path = NodePath("../Camera2D")
